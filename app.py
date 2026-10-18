@@ -279,7 +279,7 @@ if run_clicked:
                 st.session_state.elapsed = time.time() - start
                 st.session_state.issue_no = datetime.datetime.now().strftime("%Y.%m%d-%H%M")
                 status.update(label="✅ Research brief ready", state="complete", expanded=False)
-                        except Exception as e:
+            except Exception as e:
                 status.update(
                     label=f"❌ Pipeline failed: {e}",
                     state="error",
